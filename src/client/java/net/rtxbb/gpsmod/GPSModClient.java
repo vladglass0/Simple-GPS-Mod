@@ -27,10 +27,10 @@ public class GPSModClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		// Регистрируем клиентскую команду /gps x y z
+		// Регистрируем клиентскую команду /mpgps x y z
 		ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> {
 			dispatcher.register(
-				ClientCommandManager.literal("gps")
+				ClientCommandManager.literal("mpgps")
 					.then(ClientCommandManager.argument("x", DoubleArgumentType.doubleArg())
 						.then(ClientCommandManager.argument("y", DoubleArgumentType.doubleArg())
 							.then(ClientCommandManager.argument("z", DoubleArgumentType.doubleArg())
@@ -88,8 +88,8 @@ public class GPSModClient implements ClientModInitializer {
 		int cx = screenWidth / 2;
 		int cy = screenHeight / 2;
 		int radius = Math.min(screenWidth, screenHeight) / 7;
-		int ax = (int) (cx + Math.cos(screenAngle) * radius) - arrowSize / 2;
-		int ay = (int) (cy + Math.sin(screenAngle) * radius) - arrowSize / 2;
+		int ax = (int) (cx + Math.cos(screenAngle) * radius) + arrowSize / 2;
+		int ay = (int) (cy + Math.sin(screenAngle) * radius) + arrowSize / 2;
 
 		MatrixStack matrices = drawContext.getMatrices();
 		matrices.push();

@@ -3,7 +3,7 @@
 	"id": "gps-mod",
 	"version": "${version}",
 	"name": "GPS Mod",
-	"description": "/gps x y z - устанавливает цель на координатах x, y, z\n/gps - сбрасывает цель",
+	"description": "/mpgps x y z - устанавливает цель на координатах x, y, z\n/mpgps - сбрасывает цель",
 	"authors": [
 		"RtxBB"
 	],
