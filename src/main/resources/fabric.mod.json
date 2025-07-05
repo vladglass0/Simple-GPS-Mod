@@ -8,8 +8,8 @@
 		"RtxBB"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://example.com/",
+		"sources": "https://github.com/vladglass0/Simple-GPS-Mod/"
 	},
 	"license": "украли",
 	"icon": "assets/gps-mod/icon.png",
